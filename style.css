@@ -1,0 +1,618 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100vw !important;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    background-color: rgba(235, 235, 235, .5);
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+    transition: all ease-in .5s;
+    position: relative;
+}
+
+
+.board{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.board div{
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    background-image: url('./resources/kit-banner-2.png');
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: all ease-in-out 1s;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* HEADER */
+#primary-header{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+   display: flex;
+   justify-content: space-between;
+   height: 60px;   
+   padding: 10px;
+}
+#primary-header img{
+    background-color: white;
+    margin: 1px;
+    width: 40px;
+}
+#primary-header span{
+    float: left;
+    flex: 1;
+    height: 100%;
+    width: 300px;
+}
+#primary-header select{
+    height: 100%;
+    font-size: 1.2rem;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 3px;
+    border: 1px solid white;
+    outline: none;
+}
+#primary-header h3{
+    display: inline;
+    margin: 10px;
+}
+header{
+    background-color: rgb(192, 1, 1);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+   padding: 10px;
+   color: white;
+   width: 100%;
+   position: sticky;
+   top: 0;
+   right: 0;
+   z-index: 100;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    flex: 1;
+}
+#man-u-logo{
+    height: 90px;
+    width:  100px;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    list-style: none;
+    width: 1000px;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight:400;
+    letter-spacing: 1.5px;
+}
+.nav-list li{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    transition: all ease-in .2s;
+}
+.nav-list li:hover{
+    border-bottom: 6px solid white ;
+}
+
+.nav-meta{
+    align-items: center;
+    height: 100%;
+
+}
+.nav-meta ul{
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    
+}
+.nav-meta li{
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    width: 70px;
+    margin: 3px;
+    transition: all ease-in-out 1s;
+}
+.nav-meta img{
+    height: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 2px;
+}
+.nav-meta span{
+    display: none;
+}
+
+
+/* NAV DIVS */
+.nav-div-container{
+    height: 70vh;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: none;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-div{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 80%;
+    height: 90%;
+    display: none;
+    transition: all ease-in .5s;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+
+}
+.nav-div section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.nav-div ul{
+    width: 100vw;
+    display: flex;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 50px;
+    position: absolute;
+    padding: 10px;
+    width: 80%;
+    font-size: large;
+}
+.nav-div ul:nth-child(2){
+    top: 50px;
+    z-index: 1;
+    width: 60%;
+    z-index: -1;
+    margin-bottom: 10px;
+
+}
+.nav-div-list li{
+    cursor: pointer !important;
+}
+.nav-div article{
+    width: 30%;
+    height: 65%;
+    opacity: 0.8;
+}
+.nav-div figcaption h1{
+    width: 110%;
+    opacity: 1;
+}
+
+.nav-div figcaption{
+    position: absolute;
+    bottom: -50px;
+}
+
+/* LANDING PAGE */
+.landing-news{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 0px;
+    height: 60vh;
+    width: 90%;
+    margin: auto;
+}
+article{
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+figure{
+    width: 100%;
+    display: flex;
+}
+figure .image-row{
+    width: 50%;
+    overflow: hidden;
+}
+.image img{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.scale-img{
+    transform: scale(1.05);
+
+}
+.story{
+    height: 500px;
+    width: 900px;
+    display: flex;
+    border-radius: 10px;
+}
+
+ figure .story-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    padding: 40px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.story-text h1{
+    font-size: 2rem;
+    width: 100%;
+    line-height: 40px;
+    font-weight: 700;   
+}
+.story-text p{
+    flex: 1;
+    margin: 5px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    width: 80%;
+}
+.story-text span, .story-text-col span, .exclusive span{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.story-text span img, .story-text-col span img, .exclusive span img{
+    height: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.latest-news{
+    height: 70vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0;
+    
+}
+.story-col{
+    height: 600px;
+    width: 450px;
+    border-radius: 10px ;
+    background-color: white;
+    color: black;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.image-flex{  
+    height: 35%;
+   overflow: hidden;
+}
+.flex-img{
+   height: 100%;
+   width: 100%;
+
+}
+.story-text-col{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  font-weight: 100;
+}
+.story-text-col h2{
+  margin: 10px 0;
+}
+.story-text-col p{
+    width: 100%;
+    flex: 1;
+}
+
+.exclusive{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)); 
+   position: relative;
+   color: white;
+   }
+   .exclusive figure{
+       height: 100%;
+       width: 100vw;
+   }
+   .exclusive span, .exclusive h1{
+       padding-left: 30px;
+       position: absolute;
+       bottom: 20px;
+       left: 0;
+   }
+   .exclusive h1{
+       font-size: 5rem;
+       font-weight: 1000;
+       bottom: 50px;
+       line-height: 50px;
+       margin-bottom: 30px;
+   }
+.exclusive-image img{
+   max-width: 100%;
+}
+.exclusive-cover{
+    height: 100vh;
+    width: 100vw;
+}
+.cover{
+    min-width: 260%;
+} 
+
+.video-col h1, .video-row h1{
+    width: 80%;
+    font-size: 2.5rem;
+}
+.shopping, .matches{
+    height: 75vh;
+    padding: 40px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0,0.5), rgba(255, 255, 255, 0.5) ),url('./resources/kit-banner.png');
+    background-position: center;
+    background-size: cover;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.matches{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0,0.5), rgba(255, 255, 255, 0.5) ),url('./resources/Old-Trafford-2.jpg');
+
+}
+.shopping h3, .shopping h6, .matches h3, .matches h6{
+    color: white;
+    display: inline;
+    margin: 20px;
+
+}
+.shopping span, .matches span{
+    font-size: 1.8rem;
+    position: relative;
+    left: 80px;
+    letter-spacing: 2px;
+    display: inline;
+    width: 50%;
+}
+
+.shopping a{
+    text-decoration: none;
+}
+.shopping h6:hover, .matches h6{
+    text-decoration: underline;
+}
+.shopping-container, .match-container{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+ .product-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+    border-radius: 10px ;
+    width: 370px;
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 15px;
+
+}
+.product{
+    height: 70%;
+    width: 100%;
+    padding-top: 15px;
+
+}
+.merchandise{
+    background-position: center;
+    height: 45%;
+    width: 100%;
+}
+.cookies{
+    position: sticky;
+    bottom: 0;
+    width: 100vw;
+    margin: auto;
+    box-shadow: 2px 2px 20px #333;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+.cookies button{
+    float: right;
+    margin: 10px;
+}
+footer{
+    height: 40vh;
+    display: flex;
+    flex-direction: column ;
+}
+.partners{
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.partners-logo img{
+    height: 100px;
+    width: 100px;
+}
+.social{
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.social-links li{
+    list-style: none;
+    padding: 20px;
+}
+.social-links li div{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 2px;
+    
+
+}
+.social-links li div img{
+    width: 45px;
+    height: 45px;
+}
+.btn{
+    outline: none;
+    color: white;
+    width: 350px;
+    height: 50px;
+    width: 200px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 40px;
+}
+.btn:hover{
+    transition: all .3s ease-in-out;
+    opacity: 0.8;
+}
+.btn-red{
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.btn-white{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+}
+.btn-grey{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: black;
+}
+.btn-black{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.square-btn{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 180px;
+    left: 30px;
+    border: none;
+}
+.square-btn img{
+    height: 100%;
+    width: 100%;
+}
+.rectangle-btn{
+    border-radius: 0;
+}
+
+.footer-details{
+    display: flex;
+    justify-content: space-between;
+    height:max-content;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+.footer-list li{
+    list-style: none;
+    padding: 10px 10px 0px 5px;
+}
+.footer-details span{
+    padding: 10px 10px 0px 5px;
+    float: right;
+    position: relative;
+    bottom: 0;
+    right: 0;   
+}

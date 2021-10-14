@@ -1,0 +1,54 @@
+/* NEWS PAGE */
+
+.news-landing{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.9),rgba(0,0,0,0.3)), url('./resources/Old-Trafford-2.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.news-latest{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    color: white;
+    height: 400px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+}
+.fixtures{
+    color: white;
+    height: 300px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.match-details {
+    display: flex;
+    justify-content: space-evenly;
+    width: inherit;
+    font-size: 3rem;
+    padding-bottom: 100px;
+}
+.fixtures button{
+    width: 150px;
+    background-color: rgb(255, 0, 0);
+    border: none;
+}
+.team-details{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.team-details img{
+    height: 70px;
+    width: 70px;
+}
