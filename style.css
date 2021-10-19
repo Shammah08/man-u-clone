@@ -129,7 +129,6 @@ nav a {
   display: flex;
   align-items: center;
   height: 100px;
-  /* transition: all ease-in 0.2s; */
 }
 .nav-list li:hover {
   border-bottom: 6px solid white;
@@ -250,7 +249,6 @@ nav a {
   height: 60vh;
   width: 100%;
   margin: auto;
-  /* background-color: aqua; */
 }
 article {
   overflow: hidden;
@@ -291,7 +289,6 @@ figure .story-text {
   margin: auto;
   padding: 40px 10px;
   background-color: rgba(255, 255, 255, 0.8);
-  /* background-color: red; */
 }
 .story-text h1 {
   font-size: 1.6rem;
@@ -303,7 +300,6 @@ figure .story-text {
   flex: 1;
   margin: 5px;
   letter-spacing: 1px;
-  /* word-spacing: 2px; */
   width: 90%;
   font-size: 1rem;
 }
@@ -393,15 +389,12 @@ figure .story-text {
   padding-left: 30px;
   position: absolute;
   bottom: 0px;
-  /* border: 2px solid aqua; */
   left: 0;
 }
 .exclusive h1 {
   font-size: 2.2rem;
-  /* font-weight: 1000; */
+
   bottom: 20px;
-  /* line-height: 50px; */
-  /* margin-bottom: 30px; */
 }
 .exclusive-image img {
   max-width: 100%;
@@ -505,7 +498,6 @@ figure .story-text {
   bottom: 0;
   right: 0;
   width: 100vw;
-  /* margin: auto; */
   box-shadow: 2px 2px 20px #333;
   height: 200px;
   background-color: white;
@@ -525,7 +517,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* background-color: red; */
 }
 .partners {
   height: 250px;
@@ -562,7 +553,6 @@ footer {
   width: 40px;
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
-  /* padding: 2px; */
 }
 .social-links li div img {
   width: 35px;
